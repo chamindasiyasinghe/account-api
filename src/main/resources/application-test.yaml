@@ -1,0 +1,24 @@
+# Automated tests only. H2 is provided by testRuntimeOnly, not packaged in the application.
+spring:
+  datasource:
+    url: jdbc:h2:mem:assessment-test;DB_CLOSE_DELAY=-1
+    username: sa
+    password: ""
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+  flyway:
+    enabled: false
+  cache:
+    type: simple
+security:
+  api-key: test-api-key
+  jwt:
+    secret: MDEyMzQ1Njc4OTAxMjM0NTY3ODkwMTIzNDU2Nzg5MDE=
+    issuer: assessment
+    audience: assessment-api
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true

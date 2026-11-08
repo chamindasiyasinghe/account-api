@@ -1,0 +1,16 @@
+Build and JaCoCo generation passed with -Xlint:deprecation and -Xlint:unchecked; no Java compiler warnings emitted.
+50 tests passed; 3 live PostgreSQL tests skipped.
+Visible Sonar warning patterns addressed via constants, renamed local variables, split declarations, explicit concurrency loop and linear nickname normalization.
+Sonar engine unavailable: no certified Sonar scan or zero-issue claim. Repeated-literal source scan found no matching duplicates.
+com.westpac.assessment.AccountControllerAdviceTest: tests=11, failures=0, skipped=0
+com.westpac.assessment.AccountControllerTest: tests=22, failures=0, skipped=0
+com.westpac.assessment.PostgresConcurrencyTests: tests=3, failures=0, skipped=3
+com.westpac.assessment.ProfileConfigurationTest: tests=4, failures=0, skipped=0
+com.westpac.assessment.RequestLoggingFilterTest: tests=2, failures=0, skipped=0
+com.westpac.assessment.account_management.controller.SafeExceptionLoggingTest: tests=1, failures=0, skipped=0
+com.westpac.assessment.account_management.domain.service.AccountServiceTests: tests=7, failures=0, skipped=0
+com.westpac.assessment.account_management.domain.validator.OffensiveNicknameValidatorTest: tests=3, failures=0, skipped=0
+Combined BRANCH coverage: 81.4% (70/86).
+Combined LINE coverage: 87.7% (235/268).
+Logging tests verify no header/body/query/URL-ID/exception payload markers and no attached Throwables in application-owned log events.
+Live PostgreSQL/Redis integration was not executed.
